@@ -48,7 +48,7 @@ function handleLogout() {
 .app-header h1 {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #3182ce;
+    color: #b3295e;
     margin: 0;
     text-align: center;
 }
@@ -83,13 +83,13 @@ function handleLogout() {
 }
 
 .app-header nav a:active {
-    color: #3182ce;
+    color: #b3295e;
     background-color: #ebf8ff;
 }
 
 .app-header nav a,
 .router-link-active {
-    color: #3182ce;
+    color: #b3295e;
     background-color: #ebf8ff;
     font-weight: 600;
 }

@@ -33,7 +33,7 @@
 .about h2 {
     font-size: 1.4rem;
     font-weight: 700;
-    color: #3182ce;
+    color: #b3295e;
     background-color: #ebf8ff;
     padding: 10px 16px;
     border-radius: 12px;
@@ -72,7 +72,7 @@
     content: "•";
     position: absolute;
     left: 8px;
-    color: #3182ce;
+    color: #b3295e;
     font-weight: bold;
     font-size: 1.1rem;
 }

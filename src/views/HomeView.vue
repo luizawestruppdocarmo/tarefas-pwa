@@ -82,7 +82,7 @@ div {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    color: #3182ce;
+    color: #b3295e;
     background-color: #ebf8ff;
     padding: 6px 14px;
     border-radius: 20px;

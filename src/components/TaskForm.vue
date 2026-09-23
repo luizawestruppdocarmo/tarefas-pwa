@@ -260,13 +260,13 @@ function handleRemoveLocation() {
 }
 
 .task-input:focus {
-    border-color: #3182ce;
+    border-color: #b3295e;
     box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.15);
 }
 
 .task-button {
     padding: 12px 16px;
-    background-color: #3182ce;
+    background-color: #b3295e;
     color: #ffffff;
     border: none;
     border-radius: 20px;
@@ -400,8 +400,8 @@ function handleRemoveLocation() {
     gap: 6px;
     padding: 8px 16px;
     background-color: #ffffff;
-    border: 1px solid #3182ce;
-    color: #3182ce;
+    border: 1px solid #b3295e;
+    color: #b3295e;
     border-radius: 20px;
     font-size: 0.875rem;
     font-weight: 600;

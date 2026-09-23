@@ -84,7 +84,7 @@ function closeImage() {
 .task-label input[type='checkbox'] {
     width: 20px;
     height: 20px;
-    accent-color: #3182ce;
+    accent-color: #b3295e;
     cursor: pointer;
     border-radius: 6px;
 }
@@ -110,7 +110,7 @@ function closeImage() {
 .task-edit {
     background: transparent;
     border: none;
-    color: #3182ce;
+    color: #b3295e;
     cursor: pointer;
     font-size: 0.85rem;
     font-weight: 600;
@@ -145,7 +145,7 @@ function closeImage() {
     cursor: pointer;
     display: flex;
     align-items: center;
-    color: #3182ce;
+    color: #b3295e;
     padding: 6px;
     border-radius: 12px;
     transition: background-color 0.2s ease;

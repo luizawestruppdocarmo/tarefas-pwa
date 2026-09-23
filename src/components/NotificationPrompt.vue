@@ -100,7 +100,7 @@ function dismiss() {
 
 .btn-allow {
     padding: 8px 16px;
-    background-color: #3182ce;
+    background-color: #b3295e;
     color: #ffffff;
     border: none;
     border-radius: 20px;
@@ -111,7 +111,7 @@ function dismiss() {
 }
 
 .btn-allow:active {
-    background-color: #2b6cb0;
+    background-color: #b3295e;
 }
 
 .btn-dismiss {

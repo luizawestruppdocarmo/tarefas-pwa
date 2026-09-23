@@ -93,7 +93,7 @@ async function handleLogin() {
 .login-form h1 {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #3182ce;
+    color: #b3295e;
     background-color: #ebf8ff;
     padding: 10px 16px;
     border-radius: 12px;
@@ -129,7 +129,7 @@ async function handleLogin() {
 
 .field input:focus {
     outline: none;
-    border-color: #3182ce;
+    border-color: #b3295e;
     box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.15);
 }
 
@@ -139,7 +139,7 @@ button[type="submit"] {
     font-size: 0.95rem;
     font-weight: 600;
     color: #ffffff;
-    background-color: #3182ce;
+    background-color: #b3295e;
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -184,7 +184,7 @@ button[type="submit"]:disabled {
 }
 
 .register-link a {
-    color: #3182ce;
+    color: #b3295e;
     text-decoration: none;
     font-weight: 600;
     padding: 4px 8px;
