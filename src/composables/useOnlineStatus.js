@@ -1,4 +1,4 @@
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref, onMounted, onUnmounted } from "vue";
 
 const HEARTBEAT_INTERVAL = 10_000; // 10 segundos
 const FETCH_TIMEOUT = 5_000; // 5 segundos
@@ -26,9 +26,9 @@ export function useOnlineStatus() {
       await fetch(
         `${window.location.origin}/icons/icon-192x192.png?_=${Date.now()}`,
         {
-          method: 'HEAD',
-          mode: 'no-cors',
-          cache: 'no-store',
+          method: "HEAD",
+          mode: "no-cors",
+          cache: "no-store",
           signal: controller.signal,
         },
       );
@@ -41,8 +41,8 @@ export function useOnlineStatus() {
   }
 
   onMounted(() => {
-    window.addEventListener('online', updateStatus);
-    window.addEventListener('offline', updateStatus);
+    window.addEventListener("online", updateStatus);
+    window.addEventListener("offline", updateStatus);
 
     // Verificação inicial real de conectividade
     checkConnectivity();
@@ -52,8 +52,8 @@ export function useOnlineStatus() {
   });
 
   onUnmounted(() => {
-    window.removeEventListener('online', updateStatus);
-    window.removeEventListener('offline', updateStatus);
+    window.removeEventListener("online", updateStatus);
+    window.removeEventListener("offline", updateStatus);
 
     if (intervalId) {
       clearInterval(intervalId);

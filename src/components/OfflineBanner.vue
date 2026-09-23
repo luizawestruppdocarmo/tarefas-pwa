@@ -1,40 +1,30 @@
 <template>
-  <div v-if="!isOnline" class="offline-banner">
-    Você está offline. Algumas funcionalidades podem estar indisponíveis.
-  </div>
+    <div v-if="!isOnline" class="offline-banner">
+        Você está offline. Algumas funcionalidades podem estar indisponíveis.
+    </div>
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
+import { useOnlineStatus } from '/src/composables/useOnlineStatus.js';
 
-const isOnline = ref(navigator.onLine);
-
-function updateOnlineStatus() {
-  isOnline.value = navigator.onLine;
-}
-
-onMounted(() => {
-  window.addEventListener('online', updateOnlineStatus);
-  window.addEventListener('offline', updateOnlineStatus);
-});
-
-onUnmounted(() => {
-  window.removeEventListener('online', updateOnlineStatus);
-  window.removeEventListener('offline', updateOnlineStatus);
-});
+const { isOnline } = useOnlineStatus();
 </script>
 
 <style scoped>
 .offline-banner {
-  background-color: #e74c3c;
-  color: white;
-  text-align: center;
-  padding: 8px 16px;
-  font-size: 0.85rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
+    background-color: #e53e3e;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 4px 12px rgba(229, 62, 62, 0.2);
 }
 </style>
